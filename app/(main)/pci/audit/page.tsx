@@ -39,7 +39,7 @@ const AuditPage = () => {
           <DataTable value={filtered} className="p-datatable-sm" showGridlines paginator rows={10} rowClassName={row=>row.action==='Failed Login'?'bg-red-50':''}>
             <Column field="ts" header="Timestamp" className="font-mono text-xs" style={{width:'160px'}}/>
             <Column field="user" header="User" className="font-medium text-sm" style={{width:'150px'}}/>
-            <Column field="role" header="Role" body={row=><Tag value={row.role} severity="secondary" className="text-xs"/>} style={{width:'130px'}}/>
+            <Column field="role" header="Role" body={row=><Tag value={row.role} severity="info" className="text-xs"/>} style={{width:'130px'}}/>
             <Column field="action" header="Action" body={row=><Tag value={row.action} severity={actionSev(row.action) as any} className="text-xs"/>} style={{width:'110px'}}/>
             <Column field="module" header="Module" className="text-sm" style={{width:'110px'}}/>
             <Column field="entity" header="Record ID" className="font-mono text-xs" style={{width:'130px'}}/>

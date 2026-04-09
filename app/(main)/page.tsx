@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const router = useRouter();
-  useEffect(() => { router.replace('/pci/dashboard'); }, []);
+  useEffect(() => { router.replace('/pci/dashboard'); }, [router]);
   return (
     <div className="flex align-items-center justify-content-center" style={{ minHeight: '60vh' }}>
       <div className="text-center">
