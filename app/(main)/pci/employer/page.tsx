@@ -9,7 +9,7 @@ const EMPLOYERS = [
   { id:'E004', name:'AIIMS New Delhi',            type:'Govt. Hospital',  states:'Delhi',    activeJobs:4,  applications:180, verified:true,  status:'Active'           },
   { id:'E005', name:'Cipla Limited',              type:'Pharma Industry', states:'Multiple', activeJobs:6,  applications:150, verified:false, status:'Pending Approval'  },
   { id:'E006', name:'Fortis Healthcare',          type:'Hospital',        states:'North',    activeJobs:9,  applications:280, verified:true,  status:'Active'           },
-  { id:'E007', name:'Dr. Reddy's Laboratories',  type:'Pharma Industry', states:'Multiple', activeJobs:11, applications:310, verified:true,  status:'Active'           },
+  { id:'E007', name:'Dr. Reddys Laboratories',  type:'Pharma Industry', states:'Multiple', activeJobs:11, applications:310, verified:true,  status:'Active'           },
   { id:'E008', name:'Zydus Lifesciences',         type:'Pharma Industry', states:'Gujarat',  activeJobs:7,  applications:190, verified:false, status:'Pending Approval'  },
 ];
 
