@@ -99,7 +99,7 @@ const CommunicationPage = () => {
                 <div className="text-xs text-color-secondary mt-1">{a.timing} · {a.channels}</div>
               </div>
               <div className="flex align-items-center gap-2">
-                <Tag value={a.active?'Active':'Inactive'} severity={a.active?'success':'secondary'} className="text-xs" />
+                <Tag value={a.active?'Active':'Inactive'} severity={a.active?'success':'info'} className="text-xs" />
                 <Button icon="pi pi-cog" className="p-button-sm p-button-text" tooltip="Configure" />
               </div>
             </div>

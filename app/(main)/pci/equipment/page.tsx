@@ -67,7 +67,7 @@ const EquipmentPage = () => {
           </div>
           <DataTable value={filtered} className="p-datatable-sm" showGridlines paginator rows={10} rowClassName={row=>row.gaps>10?'bg-red-50':''}>
             <Column field="institution" header="Institution" body={row=><div><div className="font-medium text-sm">{row.institution}</div><div className="text-color-secondary text-xs">{row.state}</div></div>} style={{minWidth:'180px'}}/>
-            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="secondary" className="text-xs"/>} style={{width:'90px'}}/>
+            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="info" className="text-xs"/>} style={{width:'90px'}}/>
             <Column field="required" header="Required" className="font-mono text-center" style={{width:'80px'}}/>
             <Column field="submitted" header="Submitted" className="font-mono text-center" style={{width:'90px'}}/>
             <Column field="gaps" header="Gaps" body={row=><Tag value={row.gaps>0?`${row.gaps} gaps`:'None'} severity={row.gaps>0?'danger':'success'} className="text-xs"/>} style={{width:'90px'}}/>

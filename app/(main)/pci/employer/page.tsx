@@ -58,7 +58,7 @@ const EmployerPage = () => {
           <DataTable value={filtered} className="p-datatable-sm" showGridlines paginator rows={10}
             rowClassName={e => !e.verified?'bg-orange-50':''}>
             <Column field="name"         header="Organisation" className="font-medium text-sm" style={{ minWidth:'200px' }} />
-            <Column field="type"         header="Type"         body={e => <Tag value={e.type} severity="secondary" className="text-xs" />} style={{ width:'130px' }} />
+            <Column field="type"         header="Type"         body={e => <Tag value={e.type} severity="info" className="text-xs" />} style={{ width:'130px' }} />
             <Column field="states"       header="States"       className="text-sm" style={{ width:'100px' }} />
             <Column field="activeJobs"   header="Active Jobs"  className="font-mono text-center" style={{ width:'90px' }} />
             <Column field="applications" header="Applications" className="font-mono text-center" style={{ width:'110px' }} />
