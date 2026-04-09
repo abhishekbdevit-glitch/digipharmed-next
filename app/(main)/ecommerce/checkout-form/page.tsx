@@ -79,7 +79,7 @@ function CheckoutForm() {
                             </div>
                         </div>
                         <div className="col-12 flex flex-column lg:flex-row justify-content-center align-items-center lg:justify-content-end my-6">
-                            <Button className="mt-3 lg:mt-0 w-full lg:w-auto flex-order-2 lg:flex-order-1 lg:mr-4" severity="secondary" outlined label="Return to Cart" icon="pi pi-fw pi-arrow-left"></Button>
+                            <Button className="mt-3 lg:mt-0 w-full lg:w-auto flex-order-2 lg:flex-order-1 lg:mr-4" severity="info" outlined label="Return to Cart" icon="pi pi-fw pi-arrow-left"></Button>
                             <Button className="w-full lg:w-auto flex-order-1 lg:flex-order-2" label="Continue to Shipping" icon="pi pi-fw pi-check"></Button>
                         </div>
                     </div>

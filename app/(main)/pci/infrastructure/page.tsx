@@ -20,7 +20,7 @@ const YesNoToggle = ({ value, onChange }) => (
 const availTag = (v) =>
   v === true  ? <Tag value="Available"     severity="success"   className="text-xs" /> :
   v === false ? <Tag value="Not Available" severity="danger"    className="text-xs" /> :
-                <Tag value="Not Entered"   severity="secondary" className="text-xs" />;
+                <Tag value="Not Entered"   severity="info" className="text-xs" />;
 
 const InfrastructurePage = () => {
   const store = useInfrastructureStore('bpharm');
@@ -77,7 +77,7 @@ const InfrastructurePage = () => {
         <div className="col-12">
           <Panel header={<div className="flex align-items-center gap-2"><i className="pi pi-exclamation-triangle text-red-400"/><span className="font-semibold">Auto-Detected Deficiencies</span><Tag value={`${compliance.deficiencies.length}`} severity="danger" className="text-xs"/></div>} toggleable className="mb-3">
             <DataTable value={compliance.deficiencies} className="p-datatable-sm" showGridlines>
-              <Column field="section" header="Section" body={d => <Tag value={d.section} severity="secondary" className="text-xs"/>} style={{width:'120px'}}/>
+              <Column field="section" header="Section" body={d => <Tag value={d.section} severity="info" className="text-xs"/>} style={{width:'120px'}}/>
               <Column field="label"   header="Item"    className="font-medium text-sm" style={{minWidth:'200px'}}/>
               <Column field="detail"  header="Detail"  className="text-sm text-color-secondary"/>
               <Column field="ref"     header="Ref."    className="text-xs text-color-secondary" style={{width:'150px'}}/>
@@ -227,7 +227,7 @@ const InfrastructurePage = () => {
                       }}/>
                       <Column header="Status" style={{width:'140px'}} body={item=>{
                         const entered=parseInt(equipment[item.id]?.qty??'',10);
-                        if(isNaN(entered)) return <Tag value="Not Entered" severity="secondary" className="text-xs"/>;
+                        if(isNaN(entered)) return <Tag value="Not Entered" severity="info" className="text-xs"/>;
                         return entered>=item.minQty?<Tag value="Compliant" severity="success" className="text-xs"/>:<Tag value={`Short by ${item.minQty-entered}`} severity="danger" className="text-xs"/>;
                       }}/>
                       <Column field="ref" header="Ref." className="text-xs text-color-secondary" style={{width:'140px'}}/>

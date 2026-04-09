@@ -69,7 +69,7 @@ const AppMailCompose: Page = () => {
     return (
         <>
             <div className="flex align-items-center px-4 md:px-0 border-top-1 surface-border md:border-none pt-4 md:pt-0">
-                <Button type="button" icon="pi pi-chevron-left" outlined severity="secondary" className="surface-border text-900 w-3rem h-3rem mr-3" onClick={goBack}></Button>
+                <Button type="button" icon="pi pi-chevron-left" outlined severity="info" className="surface-border text-900 w-3rem h-3rem mr-3" onClick={goBack}></Button>
                 <span className="block text-900 font-bold text-xl">Compose Message</span>
             </div>
             <div className="surface-section grid mt-4 grid-nogutter formgrid p-4 gap-3 md:surface-border md:border-1 border-round">

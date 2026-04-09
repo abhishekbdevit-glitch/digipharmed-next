@@ -46,7 +46,7 @@ const HospitalPage = () => {
           <div className="px-3 py-2 border-bottom-1 surface-border font-semibold">Hospital Master — Pharm.D Affiliations (FR-HM-01, FR-HM-03)</div>
           <DataTable value={filtered} className="p-datatable-sm" showGridlines paginator rows={10}>
             <Column header="Hospital" style={{ minWidth:'200px' }} body={h => <div><div className="font-medium text-sm">{h.name}</div><div className="text-xs text-color-secondary">{h.state}</div></div>} />
-            <Column field="type"       header="Type"         body={h => <Tag value={h.type} severity="secondary" className="text-xs" />} style={{ width:'140px' }} />
+            <Column field="type"       header="Type"         body={h => <Tag value={h.type} severity="info" className="text-xs" />} style={{ width:'140px' }} />
             <Column field="beds"       header="Beds"         className="font-mono text-sm text-center" style={{ width:'70px' }} />
             <Column field="accred"     header="Accreditation" className="text-sm" style={{ width:'130px' }} />
             <Column field="mappedInst" header="Mapped Inst." className="font-mono text-center" style={{ width:'100px' }} />

@@ -286,7 +286,7 @@ function AppMailTable(props: AppMailTableProps) {
                     </span>
                     <div id={columnOptions.rowIndex.toString() + '-options'} style={{ display: 'none' }}>
                         <Button type="button" tooltip="Archive" tooltipOptions={{ position: 'top' }} icon="pi pi-inbox" className="h-2rem w-2rem mr-2" onClick={(event) => handleArchive(event, mail.id)}></Button>
-                        <Button type="button" tooltip="Reply" tooltipOptions={{ position: 'top' }} icon="pi pi-reply" className="h-2rem w-2rem mr-2" severity="secondary" onClick={(event) => handleReply(event, mail)}></Button>
+                        <Button type="button" tooltip="Reply" tooltipOptions={{ position: 'top' }} icon="pi pi-reply" className="h-2rem w-2rem mr-2" severity="info" onClick={(event) => handleReply(event, mail)}></Button>
                         <Button type="button" tooltip="Trash" tooltipOptions={{ position: 'top' }} icon="pi pi-trash" className="h-2rem w-2rem" severity="danger" onClick={(event) => handleTrash(event, mail)}></Button>
                     </div>
                 </div>

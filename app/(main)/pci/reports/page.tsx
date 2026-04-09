@@ -47,7 +47,7 @@ const ReportsPage = () => {
               <div>
                 <div className="flex align-items-center gap-2">
                   <span className="font-medium text-sm">{r.title}</span>
-                  <Tag value={r.ref} severity="secondary" className="text-xs"/>
+                  <Tag value={r.ref} severity="info" className="text-xs"/>
                   <Tag value={r.category} severity="info" className="text-xs"/>
                 </div>
                 <div className="text-color-secondary text-xs mt-1">{r.desc}</div>

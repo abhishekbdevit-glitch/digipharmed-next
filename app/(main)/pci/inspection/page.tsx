@@ -61,7 +61,7 @@ const InspectionPage = () => {
             <Column field="id" header="Insp. ID" className="font-mono text-xs" style={{width:'90px'}}/>
             <Column field="institution" header="Institution" style={{minWidth:'200px'}} body={row=><div className="font-medium text-sm">{row.institution}</div>}/>
             <Column field="type" header="Type" body={row=><Tag value={row.type} severity="info" className="text-xs"/>} style={{width:'80px'}}/>
-            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="secondary" className="text-xs"/>} style={{width:'90px'}}/>
+            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="info" className="text-xs"/>} style={{width:'90px'}}/>
             <Column field="inspector" header="Inspector" className="text-sm" style={{width:'120px'}} body={row=>row.inspector==='Unassigned'?<Tag value="Unassigned" severity="danger" className="text-xs"/>:<span>{row.inspector}</span>}/>
             <Column field="observer" header="Observer" className="text-sm text-color-secondary" style={{width:'90px'}}/>
             <Column field="scheduled" header="Scheduled" className="text-sm" style={{width:'110px'}}/>

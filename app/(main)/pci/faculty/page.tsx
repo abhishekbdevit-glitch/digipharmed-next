@@ -215,7 +215,7 @@ const FacultyPage = () => {
           <Column header="Vacant" style={{ width: '80px' }} body={(r: any) => r.required > 0 ? <Tag value={`${r.vacant}`} severity={r.vacant === 0 ? 'success' : 'danger'} className="text-xs" /> : <span className="text-color-secondary">—</span>} />
           <Column header="Workload" style={{ width: '100px' }} body={(r: any) => {
             const hrs = WORKLOAD[r.desig as keyof typeof WORKLOAD];
-            return <Tag value={hrs ? `${hrs} hrs/wk` : 'Admin'} severity="secondary" className="text-xs" />;
+            return <Tag value={hrs ? `${hrs} hrs/wk` : 'Admin'} severity="info" className="text-xs" />;
           }} />
           <Column header="Qualification" className="text-xs text-color-secondary" style={{ minWidth: '200px' }} body={(r: any) => <span className="text-xs">{qualHint(r.dept, r.desig)}</span>} />
           <Column header="" style={{ width: '80px' }} body={(r: any) => (

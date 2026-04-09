@@ -135,8 +135,8 @@ const ChatBox = (props: ChatBoxProps) => {
                         <span className="text-700">Last active 1 hour ago</span>
                     </div>
                     <div className="flex align-items-center ml-auto">
-                        <Button type="button" icon="pi pi-phone" rounded outlined severity="secondary" className="mr-3"></Button>
-                        <Button type="button" icon="pi pi-ellipsis-v" rounded outlined severity="secondary"></Button>
+                        <Button type="button" icon="pi pi-phone" rounded outlined severity="info" className="mr-3"></Button>
+                        <Button type="button" icon="pi pi-ellipsis-v" rounded outlined severity="info"></Button>
                     </div>
                 </div>
                 <div ref={chatWindow} className="p-3 md:px-4 lg:px-6 lg:py-4 mt-2 overflow-y-auto" style={{ maxHeight: '53vh' }}>
@@ -178,7 +178,7 @@ const ChatBox = (props: ChatBoxProps) => {
                 <div className="p-3 md:p-4 lg:p-6 flex flex-column sm:flex-row align-items-center mt-auto border-top-1 surface-border gap-3">
                     <InputText id="message" type="text" placeholder="Type a message" className="flex-1 w-full sm:w-auto border-round" value={textContent} onChange={(e) => setTextContent(e.target.value)} onKeyDown={handleInputTextKeyDown} />
                     <div className="flex w-full sm:w-auto gap-3">
-                        <Button className="w-full sm:w-auto justify-content-center text-xl" severity="secondary" onClick={(event) => op.current?.toggle(event)}>
+                        <Button className="w-full sm:w-auto justify-content-center text-xl" severity="info" onClick={(event) => op.current?.toggle(event)}>
                             😀
                         </Button>
                         <Button label="Send" icon="pi pi-send" className="w-full sm:w-auto" onClick={() => _sendMessage()}></Button>

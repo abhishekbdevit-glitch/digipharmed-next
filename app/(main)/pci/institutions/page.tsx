@@ -84,7 +84,7 @@ const InstitutionPage = () => {
 
   const coursesTemplate = (row: Institution) => (
     <div className="flex flex-wrap gap-1">
-      {row.courses.map(c => <Tag key={c} value={c} severity="secondary" className="text-xs" />)}
+      {row.courses.map(c => <Tag key={c} value={c} severity="info" className="text-xs" />)}
     </div>
   );
 

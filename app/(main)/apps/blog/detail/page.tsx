@@ -86,8 +86,8 @@ function BlogDetail() {
                 <li className="line-height-3">Scelerisque ultricies tincidunt lectus faucibus non morbi sed nibh varius. Quam a, habitasse egestaseleifend.</li>
             </ul>
             <div className="flex flex-column sm:flex-row my-8 w-full gap-3">
-                <Button icon="pi pi-twitter" severity="secondary" label="Twitter"></Button>
-                <Button icon="pi pi-facebook" severity="secondary" label="Facebook"></Button>
+                <Button icon="pi pi-twitter" severity="info" label="Twitter"></Button>
+                <Button icon="pi pi-facebook" severity="info" label="Facebook"></Button>
                 <Button onClick={() => router.push('/apps/blog/edit')} icon="pi pi-pencil" className="sm:ml-auto" label="Edit Post"></Button>
             </div>
             <div className="flex align-items-center mb-4 font-bold">

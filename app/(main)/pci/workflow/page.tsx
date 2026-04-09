@@ -91,7 +91,7 @@ const WorkflowPage = () => {
             <Column selectionMode="multiple" style={{width:'3rem'}} />
             <Column header="Application" body={row=><div><div className="font-mono text-xs text-color-secondary">{row.id}</div><div className="font-medium text-sm mt-1">{row.institution}</div></div>} style={{minWidth:'180px'}} />
             <Column field="appType" header="Type" className="text-sm" style={{width:'130px'}} />
-            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="secondary" className="text-xs"/>} style={{width:'90px'}} />
+            <Column field="course" header="Course" body={row=><Tag value={row.course} severity="info" className="text-xs"/>} style={{width:'90px'}} />
             <Column field="stage" header="Stage" body={row=><Tag value={row.stage} severity={stageSev(row.stage) as any} className="text-xs"/>} style={{width:'120px'}} />
             <Column field="assignedTo" header="Assigned To" className="text-sm" style={{width:'120px'}} body={row=>row.assignedTo==='—'||row.assignedTo==='Unassigned'?<Tag value="Unassigned" severity="danger" className="text-xs"/>:<span>{row.assignedTo}</span>} />
             <Column header="SLA" body={slaBody} style={{width:'130px'}} />
