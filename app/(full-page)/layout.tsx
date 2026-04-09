@@ -9,7 +9,7 @@ export default function FullPageLayout({ children }: FullPageLayoutProps) {
     return (
         <React.Fragment>
             {children}
-            <AppConfig minimal />
+            <AppConfig />
         </React.Fragment>
     );
 }
